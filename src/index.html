@@ -40,21 +40,23 @@
             <label for="inputCard">Card#</label>
             <input
               type="text"
+              title="16 characters"
               pattern="[0-9]{16}"
               class="form-control"
               id="inputCard"
-              placeholder="XXXXXXXXXXXXXX"
+              placeholder="XXXXXXXXXXXXXX 16 números"
               required
             />
           </div>
           <div class="col-3">
             <label for="inputCVC">CVC#</label>
             <input
-              type="number"
-              pattern="[0-9]{4}"
+              type="text"
+              title="3 numbers"
+              pattern="[0-9]{3}"
               class="form-control"
               id="inputCVC"
-              placeholder="0000"
+              placeholder="000 3 números"
               required
             />
           </div>
@@ -64,6 +66,7 @@
 
             <input
               type="number"
+              title="amount"
               class="form-control"
               id="inputAmount"
               placeholder="Amount"
@@ -76,7 +79,7 @@
             <label for="name">First Name</label>
             <input
               type="text"
-              pattern="[A-Za-z]"
+              pattern="[A-Za-z]{1,}"
               class="form-control"
               id="name"
               placeholder="Firstname"
@@ -87,7 +90,7 @@
             <label for="lastname">Last Name</label>
             <input
               type="text"
-              pattern="[A-Za-z]"
+              pattern="[A-Za-z]{1,}"
               class="form-control"
               id="lastname"
               placeholder="Lastname"
@@ -100,7 +103,7 @@
             <label for="inputCity">City</label>
             <input
               type="text"
-              pattern="[A-Za-z]"
+              pattern="[A-Za-z]{1,}"
               class="form-control"
               id="inputCity"
               required
@@ -109,7 +112,7 @@
           <div class="col-md-3">
             <label for="inputState">State</label>
             <select id="inputState" class="form-control" required>
-              <option selected>Pick a state</option>
+              <option selected disabled value="">Pick a state</option>
               <option>Madrid</option>
             </select>
           </div>
@@ -120,6 +123,7 @@
               pattern="[0-9]{5}"
               class="form-control"
               id="inputZip"
+              placeholder="5 numbers"
               required
             />
           </div>
