@@ -10,3 +10,10 @@ body {
   margin-bottom: 0;
   margin-top: 1%;
 }
+
+.dnone {
+  display: none;
+}
+.dshow {
+  display: block;
+}

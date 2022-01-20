@@ -12,26 +12,31 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
     <div class="container mt-10">
-      <form id="myForm" lass="needs-validation" novalidate>
+      <form id="myForm" class="needs-validation" novalidate>
         <div class="first">
           <h3>Payment form example</h3>
         </div>
 
-        <div class="form-row">
+        <div class="row">
           <div class="col-md-12 mt-2">
             <div class="alert alert-danger dnone" id="myAlert" role="alert">
               <b>Some fields are missing</b>
             </div>
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-5">
+        <div class="row">
+          <div class="col-md-5">
             <label for="inputCard">Card#</label>
             <input
               type="text"
@@ -42,7 +47,7 @@
               required
             />
           </div>
-          <div class="form-group col-md-3">
+          <div class="col-3">
             <label for="inputCVC">CVC#</label>
             <input
               type="number"
@@ -53,7 +58,7 @@
               required
             />
           </div>
-          <div class="form-group col-md-4">
+          <div class="col-4">
             $
             <label for="inputAmount">Amount</label>
 
@@ -66,8 +71,8 @@
             />
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
+        <div class="row">
+          <div class="col-md-6">
             <label for="name">First Name</label>
             <input
               type="text"
@@ -78,7 +83,7 @@
               required
             />
           </div>
-          <div class="form-group col-md-6">
+          <div class="col-md-6">
             <label for="lastname">Last Name</label>
             <input
               type="text"
@@ -90,8 +95,8 @@
             />
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
+        <div class="row">
+          <div class="col-md-6">
             <label for="inputCity">City</label>
             <input
               type="text"
@@ -101,14 +106,14 @@
               required
             />
           </div>
-          <div class="form-group col-md-3">
+          <div class="col-md-3">
             <label for="inputState">State</label>
             <select id="inputState" class="form-control" required>
               <option selected>Pick a state</option>
               <option>Madrid</option>
             </select>
           </div>
-          <div class="form-group col-md-3">
+          <div class="col-md-3">
             <label for="inputZip">Postal Code</label>
             <input
               type="text"
@@ -119,8 +124,8 @@
             />
           </div>
         </div>
-        <div class="form-row" id="box">
-          <div class="form-group col-md-6">
+        <div class="row" id="box">
+          <div class="col-md-6">
             <label for="cards">We accept:</label>
             <div>
               <div id="cards">
@@ -179,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="form-group col-md-6">
+          <div class="col-md-6">
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label"
                 >Message</label
@@ -196,16 +201,11 @@
           </div>
         </div>
 
-        <div>
-          <button
-            type="button"
-            name="ResetForm"
-            id="ReserForm"
-            class="btn btn-secondary pull-right"
-          >
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="reset" value="Reset" class="btn btn-secondary">
             Cancel
           </button>
-          <button type="submit" class="btn btn-primary pull-right">
+          <button type="submit" value="Submit" class="btn btn-primary">
             Send
           </button>
         </div>
